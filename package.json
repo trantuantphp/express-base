@@ -1,5 +1,5 @@
 {
-    "name": "express-base",
+    "name": "create-express-base",
     "version": "1.0.0",
     "description": "Template for API by ExpressJS",
     "main": "src/index.js",
