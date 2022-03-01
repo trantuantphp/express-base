@@ -4,7 +4,7 @@
     "description": "Template for API by ExpressJS",
     "main": "src/index.js",
     "bin": {
-        "generate-project": "./generate.js"
+        "generate-project": "./bin/generate.js"
     },
     "scripts": {
         "start": "babel-node src/index.js --max-old-space-size=2048",
