@@ -1,0 +1,43 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "extends": ["eslint:recommended", "prettier"],
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": ["babel", "import", "prettier"],
+    "rules": {
+        "import/no-duplicates": "error",
+        "import/no-unresolved": "off",
+        "import/named": "error",
+        "prettier/prettier": [
+            "error",
+            {
+                "semi": true,
+                "trailingComma": "all",
+                "singleQuote": false,
+                "printWidth": 80,
+                "tabWidth": 4,
+                "endOfLine": "auto"
+            }
+        ],
+        "react/no-children-prop": "off",
+        "react/no-typos": "error",
+        "react/no-unused-state": "error",
+        "react/jsx-no-bind": "off",
+        "array-callback-return": "error",
+        "consistent-return": "off",
+        "babel/no-invalid-this": "error",
+        "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+        "no-case-declarations": "off"
+    }
+}

@@ -1,0 +1,15 @@
+paths:
+    /user/login:
+        post:
+            security: []
+            tags: [User]
+            summary: Authentication
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/request/Customer/Create'
+            responses:
+                200:
+                    $ref: '#/components/responses/Customer/Create'

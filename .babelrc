@@ -1,0 +1,20 @@
+{
+    "presets": ["@babel/preset-env", "minify"],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "configs": "./src/configs",
+                    "helpers": "./src/helpers",
+                    "routes": "./src/routes",
+                    "controllers": "./src/controllers",
+                    "database": "./src/database",
+                    "middleware": "./src/middleware",
+                    "documents": "./src/documents",
+                    "modules": "./src/modules"
+                }
+            }
+        ]
+    ]
+}
